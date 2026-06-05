@@ -1,0 +1,90 @@
+/* pages/index/index.wxss */
+.container {
+  padding: 30rpx;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #0a1128 0%, #0f1a2f 100%);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+
+.title {
+  display: block;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #ffd966;
+  letter-spacing: 2rpx;
+}
+
+.subtitle {
+  display: block;
+  font-size: 24rpx;
+  color: #8e9aaf;
+  margin-top: 8rpx;
+}
+
+.event-card {
+  background: rgba(22, 33, 62, 0.85);
+  backdrop-filter: blur(4px);
+  border-radius: 32rpx;
+  padding: 24rpx 28rpx;  /* 原来是30rpx，改小了一点 */
+  margin-bottom: 30rpx;
+  box-shadow: 0 8rpx 20rpx rgba(0, 0, 0, 0.4);
+  border: 1rpx solid rgba(77, 159, 255, 0.2);
+  position: relative;
+}
+
+.event-name {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 16rpx;
+}
+
+.event-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+  font-size: 26rpx;
+  color: #b0c4de;
+}
+
+.event-desc {
+  font-size: 28rpx;
+  color: #cdd9f4;
+  line-height: 1.5;
+  margin-bottom: 12rpx;  /* 原来是30rpx，改小 */
+  border-left: 3rpx solid #4d9fff;
+  padding-left: 20rpx;
+}
+
+.remind-btn {
+  background: linear-gradient(135deg, #2a5f8a, #1d3e5a);
+  color: white;
+  border-radius: 60rpx;
+  font-size: 28rpx;
+  width: 180rpx;
+  height: 64rpx;
+  line-height: 1;           /* 关键：改成1，不要用固定数值 */
+  text-align: center;
+  border: none;
+  display: flex;            /* 关键：使用flex布局 */
+  align-items: center;      /* 关键：垂直居中 */
+  justify-content: center;  /* 水平居中 */
+  padding: 0;               /* 清除默认内边距 */
+  margin-top: 8rpx;
+}
+
+.remind-btn.disabled {
+  background: #3a4a5c;
+  opacity: 0.6;
+}
+
+.footer-tip {
+  text-align: center;
+  font-size: 24rpx;
+  color: #6b7a8a;
+  padding: 40rpx 0;
+}

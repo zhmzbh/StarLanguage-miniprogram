@@ -1,0 +1,15 @@
+<!--pages/starMap/starMap.wxml-->
+<view class="star-container">
+  <!-- 新版 Canvas 2D -->
+  <canvas type="2d" id="starCanvas" class="star-canvas" 
+    bindtouchstart="touchStart" bindtouchmove="touchMove"></canvas>
+  <!-- 旧版 canvas-id（降级方案，隐藏但保留） -->
+  <canvas canvas-id="starCanvasLegacy" class="star-canvas-legacy" style="display: none;"></canvas>
+  
+  <view class="control-bar">
+    <button class="reset-btn" bindtap="resetView">重置视角</button>
+  </view>
+  <view class="star-tip">
+    <text>✨ 北斗七星 | 手指拖拽移动 | 点击重置</text>
+  </view>
+</view>

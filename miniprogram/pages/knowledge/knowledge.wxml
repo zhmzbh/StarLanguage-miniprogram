@@ -1,0 +1,16 @@
+<!--pages/knowledge/knowledge.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">📖 天文百科</text>
+  </view>
+
+  <block wx:for="{{articles}}" wx:key="_id">
+    <view class="article-card">
+      <view class="article-title">{{item.title}}</view>
+      <view class="article-content">{{item.content}}</view>
+    </view>
+  </block>
+
+  <view wx:if="{{loading}}" class="loading-tip">加载中...</view>
+  <view wx:elif="{{articles.length === 0}}" class="empty-tip">暂无百科内容</view>
+</view>

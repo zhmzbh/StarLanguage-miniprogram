@@ -1,0 +1,47 @@
+/* pages/knowledge/knowledge.wxss */
+.container {
+  padding: 30rpx;
+  background-color: #0a1128;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+.title {
+  font-size: 44rpx;
+  font-weight: bold;
+  color: #ffd966;
+}
+
+.article-card {
+  background: #16213e;
+  border-radius: 24rpx;
+  margin-bottom: 30rpx;
+  padding: 30rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.3);
+}
+
+.article-title {
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 16rpx;
+  border-left: 4rpx solid #4d9fff;
+  padding-left: 20rpx;
+}
+
+.article-content {
+  font-size: 28rpx;
+  color: #c0c8dc;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.loading-tip, .empty-tip {
+  text-align: center;
+  color: #8e9aaf;
+  margin-top: 100rpx;
+}

@@ -1,0 +1,33 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">🌠 近期天象</text>
+    <text class="subtitle">星空不灭，浪漫永存</text>
+  </view>
+
+  <block wx:for="{{events}}" wx:key="id">
+    <view class="event-card">
+      <view class="event-name">{{item.name}}</view>
+      <view class="event-info">
+        <text class="date">📅 {{item.date}} {{item.time}}</text>
+        <text class="type">🔭 {{item.type}}</text>
+      </view>
+      <view class="event-desc">{{item.desc}}</view>
+      <button 
+        class="remind-btn {{item.remindSet ? 'disabled' : ''}}"
+        bindtap="subscribeEvent"
+        data-id="{{item.id}}"
+        data-name="{{item.name}}"
+        data-date="{{item.date}}"
+        data-time="{{item.time}}"
+        disabled="{{item.remindSet}}"
+      >
+        {{item.remindSet ? '✅ 已提醒' : '⏰ 提醒我'}}
+      </button>
+    </view>
+  </block>
+
+  <view class="footer-tip">
+    <text>✨ 天象数据持续更新</text>
+  </view>
+</view>

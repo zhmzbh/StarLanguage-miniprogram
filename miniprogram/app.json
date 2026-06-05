@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/starMap/starMap",
+    "pages/knowledge/knowledge",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#0a1128",
+    "navigationBarTitleText": "星语天文",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#0a1128",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#8e9aaf",
+    "selectedColor": "#4d9fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "天象",
+        "iconPath": "images/icon_event.png",
+        "selectedIconPath": "images/icon_event_hl.png"
+      },
+      {
+        "pagePath": "pages/starMap/starMap",
+        "text": "星图",
+        "iconPath": "images/icon_star.png",
+        "selectedIconPath": "images/icon_star_hl.png"
+      },
+      {
+        "pagePath": "pages/knowledge/knowledge",
+        "text": "百科",
+        "iconPath": "images/icon_book.png",
+        "selectedIconPath": "images/icon_book_hl.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "images/icon_user.png",
+        "selectedIconPath": "images/icon_user_hl.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
